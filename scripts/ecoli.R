@@ -6,7 +6,7 @@ head (metadata)
 library (ggplot2)
 
 ggplot(metadata, aes (x=sample, y=genome_size, color)) + geom_point() + scale_color_viridis_c()
-
+#this is a change
 ggplot(metadata, aes (x=sample, y=genome_size, color=strain)) + geom_point() +
   labels(x="Sample #", y="Genome Size", title ="Genome sizes", subtitle = "Exploring the data", caption = "Source:Ecoli")
 
